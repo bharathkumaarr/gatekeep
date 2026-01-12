@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+
+
+@theme {
+    --color-background: theme(colors.zinc.950)
+    --color-surface: theme(colors.zinc.900)
+
+    --color-primary: theme(colors.emerald.500)
+    --color-accent: theme(colors.emerald.400)
+
+    --color-text: theme(colors.zinc.100)
+    --color-muted: theme(colors.zinc.400)
+
+    --color-error: theme(colors.rose.500)
+}
+
+
+@layer base {
+    html {
+        background-color: var(--color-background);
+        color: var(--color-text);
+    }
+
+    body {
+        min-height: 100vh
+    }
+}
+
